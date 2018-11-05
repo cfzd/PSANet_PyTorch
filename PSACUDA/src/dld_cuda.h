@@ -1,0 +1,1 @@
+int dld_forward(THCudaTensor* input, THCudaTensor* output,int y_sky,int max_width);
