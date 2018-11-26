@@ -4,11 +4,11 @@ This is a non-official PyTorch implementation of **PSANet: Point-wise Spatial At
 The official implementation can be found in [here](https://github.com/hszhao/PSANet).
 This code has been tested on Python 2.7, PyTorch 0.3.1.
 
-##configuration
+## configuration
 
 Change the corresponding architecture of your CUDA device in ./PSACUDA/make.sh with `-arch=sm_xx`.
 The definition of architectures can be found in [here](http://arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/).
-##installation
+## installation
 
 `cd ./PSACUDA`
 
@@ -16,7 +16,7 @@ The definition of architectures can be found in [here](http://arnon.dk/matching-
 
 This will build the CUDA kernel code by NVCC and create a python extension.
 
-##Usage
+## Usage
 
 `from PSACUDA.moudles.PSANet import PSANetModule`
 
