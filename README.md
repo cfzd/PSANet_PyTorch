@@ -1,4 +1,4 @@
-# MTA_lane_detection
+# PSANet_PyTorch
 
 This is a non-official PyTorch implementation of **PSANet: Point-wise Spatial Attention Network for Scene Parsing**. 
 The official implementation can be found in [here](https://github.com/hszhao/PSANet).
