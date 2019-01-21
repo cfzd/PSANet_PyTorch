@@ -27,7 +27,7 @@ class PSANetCollectFunction(Function):
 		b1_grad_w = mask_grad.shape[3]
 
 
-		bottom1_grad = torch.zeros(b1_grad_n,b1_grad_c,b1_grad_w,b1_grad_h).cuda()
+		bottom1_grad = torch.zeros(b1_grad_n,b1_grad_c,b1_grad_h,b1_grad_w).cuda()
 	
 		PSAWapper.PSA_backward(1,bottom1_grad, mask_grad.data);
 		
@@ -56,7 +56,7 @@ class PSANetDistributeFunction(Function):
 		b1_grad_w = mask_grad.shape[3]
 
 
-		bottom1_grad = torch.zeros(b1_grad_n,b1_grad_c,b1_grad_w,b1_grad_h).cuda()
+		bottom1_grad = torch.zeros(b1_grad_n,b1_grad_c,b1_grad_h,b1_grad_w).cuda()
 	
 		PSAWapper.PSA_backward(2,bottom1_grad, mask_grad.data);
 		
